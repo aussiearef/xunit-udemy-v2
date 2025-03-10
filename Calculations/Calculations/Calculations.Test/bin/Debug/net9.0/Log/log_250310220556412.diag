@@ -1,0 +1,29 @@
+2025-03-10T22:05:56.4196249+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.6.2+88f8ce447cd12b629fcfe5e61d80dcc0c8cab8ec
+2025-03-10T22:05:56.4364206+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2025-03-10T22:05:56.4379006+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2025-03-10T22:05:56.4379055+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 22:05:56.391
+2025-03-10T22:05:56.4397016+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 1288
+2025-03-10T22:05:56.4397439+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.2
+2025-03-10T22:05:56.4397594+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.2\System.Private.CoreLib.dll
+2025-03-10T22:05:56.4397677+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2025-03-10T22:05:56.4397700+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\Administrator\Documents\GitHub\xunit-udemy-v2\Calculations\Calculations\Calculations.Test\bin\Debug\net9.0\Calculations.Test.dll
+2025-03-10T22:05:56.4398953+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\Administrator\Documents\GitHub\xunit-udemy-v2\Calculations\Calculations\Calculations.Test\bin\Debug\net9.0\Log --results-directory C:\Users\Administrator\Documents\GitHub\xunit-udemy-v2\Calculations\Calculations\TestResults --client-port 50181'
+2025-03-10T22:05:56.4414247+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2025-03-10T22:05:56.4569058+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2025-03-10T22:05:56.4700816+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2025-03-10T22:05:56.6719426+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '2.0.0' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2025-03-10T22:05:56.6761162+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v2.0.0+229879b765 (64-bit .NET 9.0.2)
+2025-03-10T22:05:56.7123360+00:00 xUnit.net INFORMATION   Discovering: Calculations.Test
+2025-03-10T22:05:56.7339572+00:00 xUnit.net INFORMATION   Discovered:  Calculations.Test
+2025-03-10T22:05:56.7519626+00:00 xUnit.net INFORMATION   Starting:    Calculations.Test
+2025-03-10T22:05:56.8704342+00:00 xUnit.net ERROR     Calculations.Test.CalculatorTest.Add_Given1and2_Returns3 [FAIL]
+2025-03-10T22:05:56.8708089+00:00 xUnit.net INFORMATION       Assert.Equal() Failure: Values differ
+2025-03-10T22:05:56.8708264+00:00 xUnit.net INFORMATION       Expected: 2
+2025-03-10T22:05:56.8708277+00:00 xUnit.net INFORMATION       Actual:   3
+2025-03-10T22:05:56.8711689+00:00 xUnit.net INFORMATION       Stack Trace:
+2025-03-10T22:05:56.8715580+00:00 xUnit.net INFORMATION         C:\Users\Administrator\Documents\GitHub\xunit-udemy-v2\Calculations\Calculations\Calculations.Test\CalculatorTest.cs(15,0): at Calculations.Test.CalculatorTest.Add_Given1and2_Returns3()
+2025-03-10T22:05:56.8715788+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2025-03-10T22:05:56.8715863+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2025-03-10T22:05:56.8781234+00:00 xUnit.net INFORMATION   Finished:    Calculations.Test
+2025-03-10T22:05:56.8820350+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2025-03-10T22:05:56.8873020+00:00 xUnit.net INFORMATION    Calculations.Test  Total: 2, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 0.131s

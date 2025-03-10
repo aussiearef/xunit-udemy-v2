@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24830FB8-F10A-4C42-AE1D-09EEEFC92160}|Calculations\\Calculations.csproj|c:\\users\\administrator\\documents\\github\\xunit-udemy-v2\\calculations\\calculations\\calculations\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24830FB8-F10A-4C42-AE1D-09EEEFC92160}|Calculations\\Calculations.csproj|solutionrelative:calculations\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24830FB8-F10A-4C42-AE1D-09EEEFC92160}|Calculations\\Calculations.csproj|c:\\users\\administrator\\documents\\github\\xunit-udemy-v2\\calculations\\calculations\\calculations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24830FB8-F10A-4C42-AE1D-09EEEFC92160}|Calculations\\Calculations.csproj|solutionrelative:calculations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,9 +28,9 @@
               "RelativeDocumentMoniker": "Calculations.Test\\CalculatorTest.cs",
               "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\xunit-udemy-v2\\Calculations\\Calculations\\Calculations.Test\\CalculatorTest.cs",
               "RelativeToolTip": "Calculations.Test\\CalculatorTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAjwA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T21:04:46.597Z",
+              "WhenOpened": "2025-03-07T23:52:39.038Z",
               "EditorCaption": ""
             },
             {
@@ -45,22 +41,9 @@
               "RelativeDocumentMoniker": "Calculations\\Calculator.cs",
               "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\xunit-udemy-v2\\Calculations\\Calculations\\Calculations\\Calculator.cs",
               "RelativeToolTip": "Calculations\\Calculator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T21:03:30.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\xunit-udemy-v2\\Calculations\\Calculations\\Calculations\\Program.cs",
-              "RelativeDocumentMoniker": "Calculations\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\xunit-udemy-v2\\Calculations\\Calculations\\Calculations\\Program.cs",
-              "RelativeToolTip": "Calculations\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T21:03:29.046Z",
               "EditorCaption": ""
             }
           ]
