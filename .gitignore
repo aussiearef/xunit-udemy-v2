@@ -1,0 +1,79 @@
+# User-specific files
+.vs2019/
+.vs2022/
+.vscode/
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.vspscc
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Build results
+bin/
+obj/
+out/
+
+# .NET Core files
+.project.json
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+
+# Windows Installer packages
+*.pdb
+*.ipch/
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ASP.NET Scaffolding
+Scaffolding/
+
+# Publish settings for Azure Web Apps and IIS
+PublishProfiles/
+
+# JetBrains Rider
+.idea/
+
+# Tye files
+.tye/
+
+# NuGet folders
+.nuget/
+# Avoid the global NuGet cache
+# https://github.com/NuGet/Home/issues/9039
+~/.nuget/
+
+# Windows Package files
+*.appx
+*.appxbundle
+*.xap
+*.app
+
+# .NET Core SDK files
+.global.json
+
+# ASP.NET Core Build files
+wwwroot/
+
+# Testing output
+test-results/
+
+# Local database files
+App_Data/
+*.mdf
+*.ldf
+
+# Windows Installer
+Packages/

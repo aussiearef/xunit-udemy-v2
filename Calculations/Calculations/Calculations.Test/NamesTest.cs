@@ -33,4 +33,20 @@ public class NamesTest
         var fullName = names.MakeFullName("Aref", "Karimi");
         Assert.StartsWith("Aref" , fullName , StringComparison.InvariantCultureIgnoreCase);
     }
+
+    [Fact]
+    public void MakeFullName_GivenMethodNotCalled_NickNameMustBeNull()
+    {
+        var names = new Names();
+        Assert.Null(names.NickName);
+        var fullName = names.MakeFullName("Aref", "Karimi");
+        Assert.NotNull(names.NickName);
+
+        // Assert to make sure that the format of Nickname is correct.
+
+        
+        Assert.True(!String.IsNullOrEmpty(names.NickName));
+        
+
+    }
 }
