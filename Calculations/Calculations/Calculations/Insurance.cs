@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace Calculations;
+﻿namespace Calculations;
 
 public class Insurance
 {
@@ -14,5 +12,25 @@ public class Insurance
             case >= 18: return 5;
             default: throw new InvalidDataException();
         }
+    }
+}
+
+public class Customer(Insurance insurance, int age)
+{
+    public virtual int Discount => insurance.DiscountPercentage(age);
+}
+
+public class LoyalCustomer(Insurance insurance, int age) : Customer(insurance, age)
+{
+    private readonly Insurance _insurance = insurance;
+    public override int Discount => _insurance.DiscountPercentage(age) + 10;
+}
+
+public static class CustomerFactory
+{
+    public static Customer GetInstance(int yearsWithCompany, int age)
+    {
+        var insurance = new Insurance();
+        return yearsWithCompany >= 5 ? new LoyalCustomer(insurance, age) : new Customer(insurance, age) ;
     }
 }
