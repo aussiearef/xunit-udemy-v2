@@ -1,25 +1,21 @@
-using System.Diagnostics.CodeAnalysis;
-using Xunit.Sdk;
-
 namespace Calculations.Test;
-
 
 public class CalculatorFixture
 {
-    public Calculator Calc => new Calculator();
+    public Calculator Calc => new();
 }
 
-public class CalculatorTest (ITestOutputHelper testOutputHelper , CalculatorFixture calculatorFixture) : IClassFixture<CalculatorFixture>
+public class CalculatorTest(ITestOutputHelper testOutputHelper, CalculatorFixture calculatorFixture)
+    : IClassFixture<CalculatorFixture>
 {
-    private readonly ITestOutputHelper _testOutputHelper = testOutputHelper;
     private readonly CalculatorFixture _calculatorFixture = calculatorFixture;
+    private readonly ITestOutputHelper _testOutputHelper = testOutputHelper;
 
     [Fact]
     [Trait("Category", "Calculator")]
-    [Trait("Owner","Aref")]
+    [Trait("Owner", "Aref")]
     public void Add_Given1and2_Returns3()
     {
-
         _testOutputHelper.WriteLine("Test Executed");
         // Arrange
         var calculator = new Calculator();
@@ -71,8 +67,8 @@ public class CalculatorTest (ITestOutputHelper testOutputHelper , CalculatorFixt
     [Trait("Category", "Fibo")]
     public void GetFibonacci_Includes5()
     {
-       //var calculator = new Calculator();
-       var calculator = _calculatorFixture.Calc;
+        //var calculator = new Calculator();
+        var calculator = _calculatorFixture.Calc;
         var fibo = calculator.GetFibonacci(5);
         Assert.Contains(5, fibo);
     }

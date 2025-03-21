@@ -21,7 +21,7 @@ public class Customer(Insurance insurance, int age)
 {
     public virtual int Discount => insurance.DiscountPercentage(age);
 
-    public int Age =>35;
+    public int Age => 35;
 
     public string GetFullName(string firstName, string lastName)
     {
@@ -40,6 +40,6 @@ public static class CustomerFactory
     public static Customer GetInstance(int yearsWithCompany, int age)
     {
         var insurance = new Insurance();
-        return yearsWithCompany >= 5 ? new LoyalCustomer(insurance, age) : new Customer(insurance, age) ;
+        return yearsWithCompany >= 5 ? new LoyalCustomer(insurance, age) : new Customer(insurance, age);
     }
 }

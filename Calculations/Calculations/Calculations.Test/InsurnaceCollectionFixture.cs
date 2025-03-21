@@ -1,6 +1,6 @@
 ﻿namespace Calculations.Test;
 
-public class InsuranceFixture
+public class InsuranceCollectionFixture
 {
     public Insurance Insurance => new();
 }

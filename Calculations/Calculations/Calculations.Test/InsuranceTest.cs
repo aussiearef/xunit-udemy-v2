@@ -2,9 +2,9 @@
 namespace Calculations.Test;
 
 [Collection("Insurance")]
-public class InsuranceTest (InsuranceFixture insuranceFixture)
+public class InsuranceTest (InsuranceCollectionFixture insuranceCollectionFixture)
 {
-    private readonly InsuranceFixture _insuranceFixture = insuranceFixture;
+    private readonly InsuranceCollectionFixture _insuranceCollectionFixture = insuranceCollectionFixture;
 
     [Fact]
     public void DiscountPercentage_GivenAgeOlderThan18_DiscountBetween5And20()
@@ -12,7 +12,7 @@ public class InsuranceTest (InsuranceFixture insuranceFixture)
         // Arrange
         //var insurance = new Insurance();
 
-        var insurance = _insuranceFixture.Insurance;
+        var insurance = _insuranceCollectionFixture.Insurance;
         // Act
         var discount = insurance.DiscountPercentage(70);
 
@@ -25,9 +25,8 @@ public class InsuranceTest (InsuranceFixture insuranceFixture)
     public void DiscountPercentage_GivenAgeBelow25_DiscountIs5()
     {
         //Arrange
-        //var insurance = new Insurance();
+        var insurance = new Insurance();
 
-        var insurance = _insuranceFixture.Insurance;
 
         // Act
         var discount = insurance.DiscountPercentage(24);
@@ -44,9 +43,8 @@ public class InsuranceTest (InsuranceFixture insuranceFixture)
     public void DiscountPercentage_GivenAgeIsBelow18_ThrowsException()
     {
         // Arrange
-        //var insurance = new Insurance();
+        var insurance = new Insurance();
 
-        var insurance = _insuranceFixture.Insurance;
         // Act and Assert
         Assert.Throws<InvalidDataException>(()=> insurance.DiscountPercentage(5));
     }

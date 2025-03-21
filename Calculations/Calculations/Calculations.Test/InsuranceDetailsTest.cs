@@ -1,16 +1,16 @@
 ﻿namespace Calculations.Test;
 
 [Collection("Insurance")]
-public class InsuranceDetailsTest (InsuranceFixture insuranceFixture)
+public class InsuranceDetailsTest(InsuranceCollectionFixture insuranceCollectionFixture)
 {
-    private readonly InsuranceFixture _insuranceFixture = insuranceFixture;
+    private readonly InsuranceCollectionFixture _insuranceCollectionFixture = insuranceCollectionFixture;
 
     [Fact]
-    public void Insurance_InterestRate_Return10()
+    public void Insurance_InterestRate()
     {
         //var insurance = new Insurance();
 
-        var insurance = _insuranceFixture.Insurance;
+        var insurance = _insuranceCollectionFixture.Insurance;
         Assert.Equal(10, insurance.InterestRate);
     }
 }
