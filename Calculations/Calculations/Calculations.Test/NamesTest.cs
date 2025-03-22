@@ -1,5 +1,7 @@
 ﻿namespace Calculations.Test;
 
+[Trait("Category","Names")]
+[Collection("Names")]
 public class NamesTest
 {
     [Fact]

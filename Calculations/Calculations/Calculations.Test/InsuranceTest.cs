@@ -1,8 +1,7 @@
-﻿
-namespace Calculations.Test;
+﻿namespace Calculations.Test;
 
 [Collection("Insurance")]
-public class InsuranceTest (InsuranceCollectionFixture insuranceCollectionFixture)
+public class InsuranceTest(InsuranceCollectionFixture insuranceCollectionFixture)
 {
     private readonly InsuranceCollectionFixture _insuranceCollectionFixture = insuranceCollectionFixture;
 
@@ -46,7 +45,7 @@ public class InsuranceTest (InsuranceCollectionFixture insuranceCollectionFixtur
         var insurance = new Insurance();
 
         // Act and Assert
-        Assert.Throws<InvalidDataException>(()=> insurance.DiscountPercentage(5));
+        Assert.Throws<InvalidDataException>(() => insurance.DiscountPercentage(5));
     }
 
     [Fact]
@@ -69,7 +68,7 @@ public class InsuranceTest (InsuranceCollectionFixture insuranceCollectionFixtur
         //Assert.IsType(typeof(Customer), customer);
 
         Assert.IsType<Customer>(customer, false);
-        
+
         // Assert.IsNotType<LoyalCustomer>(customer);
 
         // discount = 15%
@@ -93,5 +92,4 @@ public class InsuranceTest (InsuranceCollectionFixture insuranceCollectionFixtur
         Assert.Equal(10, diff);
     }
     // Add tests to check if the discount for a loyal customer is calculated correctly.
-
 }

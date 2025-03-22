@@ -9,7 +9,6 @@ public class InsuranceDetailsTest(InsuranceCollectionFixture insuranceCollection
     public void Insurance_InterestRate()
     {
         //var insurance = new Insurance();
-
         var insurance = _insuranceCollectionFixture.Insurance;
         Assert.Equal(10, insurance.InterestRate);
     }
