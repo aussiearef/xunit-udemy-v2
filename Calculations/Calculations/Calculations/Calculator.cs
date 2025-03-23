@@ -15,10 +15,9 @@ public class Calculator
 
     public IEnumerable<int> GetFibonacci(int length)
     {
-        
         var first = 0;
         var second = 1;
-        for (int i = 0; i < length; i++)
+        for (var i = 0; i < length; i++)
         {
             var next = first + second;
 
@@ -29,5 +28,10 @@ public class Calculator
         }
 
         // 1 1 3 5 8 13 ...
+    }
+
+    public bool IsOdd(int value)
+    {
+        return value % 2 != 0;
     }
 }

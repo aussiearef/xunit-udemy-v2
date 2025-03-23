@@ -27,6 +27,31 @@ public class CalculatorTest(ITestOutputHelper testOutputHelper, CalculatorFixtur
         Assert.Equal(3, sum);
     }
 
+
+    [Theory]
+    //[InlineData(1,2,3)]
+    //[InlineData(-3, 2, -1)]
+    //[MemberData(nameof(TestDataShare.ValuesForAddMethod), MemberType = typeof(TestDataShare))]
+    [AddData]
+    public void Add_GivenTwoNumbers_ReturnsSum(int a, int b, int expected)
+    {
+        var calc = new Calculator();
+        var result = calc.Add(a, b);
+        Assert.Equal(expected, result);
+    }
+
+
+    [Theory]
+    //[MemberData(nameof(TestDataShare.ValuesForAddMethod), MemberType = typeof(TestDataShare))]
+    [AddData]
+    public void Add_GivenTwoDecimalNumbers_ReturnsSum(decimal a, decimal b, decimal expected)
+    {
+        var calc = new Calculator();
+        var result = calc.Add(a, b);
+        Assert.Equal(expected, result);
+    }
+
+
     [Fact]
     [Trait("Category", "Calculator")]
     [Trait("Owner", "Aref")]
