@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestSubject.Tests</RootNamespace>
+    <TargetFramework>net9.0</TargetFramework>
+    <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup> 
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" /> 
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.14.2" /> 
+    <PackageReference Include="microsoft.testing.platform" Version="1.6.3" />
+    <PackageReference Include="xunit.v3" Version="2.0.0" /> <!-- Make sure you had run this command before creating your test project: dotnet new install xunit.v3.templates -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestSubject\TestSubject.csproj" />
+  </ItemGroup>
+
+</Project>

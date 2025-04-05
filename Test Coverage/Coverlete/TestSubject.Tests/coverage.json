@@ -1,0 +1,112 @@
+{
+  "TestSubject.dll": {
+    "/Users/aref/Documents/GitHub/xunit-udemy-v2/Test Coverage/Coverlete/TestSubject/Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "2": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/aref/Documents/GitHub/xunit-udemy-v2/Test Coverage/Coverlete/TestSubject/RandomNumberGenerator.cs": {
+      "TestSubject.RandomNumberGenerator": {
+        "System.Int32 TestSubject.RandomNumberGenerator::GenerateNumber(System.Int32,System.Int32)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 0,
+            "16": 0,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 7,
+              "EndOffset": 21,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean TestSubject.RandomNumberGenerator::IsNumberEven(System.Int32)": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 TestSubject.RandomNumberGenerator::GenerateMultipleNumbers(System.Int32,System.Int32,System.Int32)": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 10,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 53,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void TestSubject.RandomNumberGenerator::.ctor()": {
+          "Lines": {
+            "7": 2,
+            "8": 2,
+            "9": 2,
+            "10": 2
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
