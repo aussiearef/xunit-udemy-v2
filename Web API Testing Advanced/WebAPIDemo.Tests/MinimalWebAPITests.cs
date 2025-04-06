@@ -16,17 +16,6 @@ public class CustomWebApplicationFactory<Program>  : WebApplicationFactory<Progr
 
         builder.ConfigureServices(services =>
         {
-          // Remove the existing DbContext registration
-            var dbContextDescriptors = services
-                .Where(d => d.ServiceType == typeof(DbContextOptions<MyDbContext>) ||
-                    d.ServiceType == typeof(MyDbContext))
-                .ToList();
-
-            foreach (var descriptor in dbContextDescriptors)
-            {
-                services.Remove(descriptor);
-            }
-
             services.AddDbContext<MyDbContext>(options =>
                 {
                     options.UseInMemoryDatabase($"TestDb"); // Use a fixed database name

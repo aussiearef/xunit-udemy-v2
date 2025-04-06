@@ -4,9 +4,9 @@ using WebAPIDemo.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-builder.Services.AddDbContext<MyDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+if (builder.Environment.EnvironmentName != "Testing")
+    builder.Services.AddDbContext<MyDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
