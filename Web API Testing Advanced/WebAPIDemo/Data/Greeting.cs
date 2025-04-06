@@ -1,3 +1,4 @@
+namespace WebAPIDemo.Data;
 public class Greeting
 {
     public int Id { get; set; } = 0;
