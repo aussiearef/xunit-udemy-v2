@@ -1,0 +1,6 @@
+@WebAPoDemo_HostAddress = http://localhost:5142
+
+GET {{WebAPoDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
