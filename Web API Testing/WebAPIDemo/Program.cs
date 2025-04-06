@@ -8,3 +8,6 @@ app.MapGet("/TestMe", async (int id)=>{
 .WithName("TestMe");
 
 await app.RunAsync();
+
+
+public partial class Program { }
